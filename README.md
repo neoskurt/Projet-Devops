@@ -1,14 +1,31 @@
-# Valentin et Anis
+# Valentin et Anis, 2 freres, 2 Fauves 👬
 ## Projet DevOps
 
 Ce que vous allez passer 5 à 10 minutes à installer !
-Nous avons pris des jours et des nuits à le paramètrer !
+Nous avons pris des jours 🌞 et des nuits 🌜 à le paramètrer !
 
-Voici le Grand Sommaire de ce Grand PROJET !!
+Voici le Grand Sommaire de ce Grand PROJET !! 👊
 
+- Technologies utilisées
+- Resumé du projet
 - Prérequis 
 - Installation et Commandes 
 - ✨ Résultat  ✨
+
+
+## Technologies utilisées
+
+Dans la réalisation de ce projet nous avons utilisez :
+- Vagrant :
+> Ca sert à automatiser la création de machines virtuelles .
+- Ansible :
+> C'est un outil d'automatisation . Il va donc automatiser les tâches que vont effectuer les machines virtuelles ( comme par exemple l'installation et parametrage de docker,l'installation d'apache, de python ...)
+- Docker
+> On l'utilise pour la création de containers qui va donc permettre le deploiement plus facilement de notre application.
+
+## Résumé du projet 
+
+Ce projet consiste en la création et l'automatisation d'un environnement de developpement grâce à des machines virtuelles et des technologies nous le permetant . Le deploiement automatique de notre infrastructure est la clef 🔑 de notre projet.
 
 ## Prérequis
 
@@ -19,53 +36,58 @@ Voici le Grand Sommaire de ce Grand PROJET !!
 - Aller vous faire un café et installez-vous confortablement !
     https://i.imgflip.com/zcjq2.jpg
 
-## Installation et Commande
-Ouvrer votre Powershell
+## Installation et Commandes
+- Ouvrer votre Powershell
 
-Aller dans le bureau grâce à la commande suivante : cd Desktop/
+- Aller dans le bureau grâce à la commande suivante : cd Desktop/
 
-Excuter la commande suivante : git clone fsdfjhlqkdjsqlkdlkjq.git
+- Excuter la commande suivante : git clone https://github.com/neoskurt/Projet-Devops.git
 
-Toujours depuis powershell, excuter la commande suivante : vagrant up --provision
+- Toujours depuis powershell, excuter la commande suivante : vagrant up --provision
 
-Cela risque de prendre un peu de temps...
+Cela risque de prendre un peu de temps... ⏲️
 
-Une fois l'installation terminée :
+Une fois l'installation terminée 🔚 :
 
-Excuter les commandes suivantes (dans l'ordre bien-sûr) :
-vagrant ssh ansible
+- Excuter les commandes suivantes (dans l'ordre bien-sûr) : ⬇️
 
-ssh-keygen -t rsa
+> vagrant ssh ansible
 
-ssh-copy-id vagrant@192.168.99.11
+> ssh-keygen -t rsa
 
-tapper yes / puis saissisez le mot de passe suivant : vagrant
+> ssh-copy-id vagrant@192.168.99.11
 
-repeter les 2 étapes precedentes en remplacent les 2 derniers digits de l'IP de 11 par 12
+> Tapper : yes / puis saissisez le mot de passe suivant : vagrant
 
-ssh-copy-id vagrant@192.168.99.12
+> Repeter les 2 étapes precedentes en remplacent les 2 derniers digits de l'IP de 11 par 12
 
-tapper yes / puis saissisez le mot de passe suivant : vagrant 
+> ssh-copy-id vagrant@192.168.99.12
+
+> Tapper : yes / puis saissisez le mot de passe suivant : vagrant 
+
+- Une fois ces étapes terminées, rendez-vous dans le dossier projet grace à la commande : cd projet/
+
+et non cd projekt comme les studios de dévelopement... 🤡
+
+Derniére ligne droite ... Courage ! 💪
+
+- Executer la commande : ansible-playbook -e "hosts=prod" deploy-app.yml
 
 
-Une fois ces étapes terminées, rendez-vous dans le dossier projet grace a la commande : cd projet/
+Le "host" depend de la machine sur la quelle vous voulez deployer.
 
-et non cd projekt comme les studios de dévelopement...
+> Pour la prod tappez : "hosts=prod" et pour la test "hosts=staging"
 
-Derniére ligne droite ... Courage ! 
-
-Executer : ansible-playbook -e "hosts=prod" deploy-app.yml
-
-
-le "host" depend de la machine sur la quelle vous voulez deployer.
-Pour la prod tappez : "hosts=prod" et pour la test "hosts=staging"
-Pour deployer sur les deux VM il suffit de faire "hosts=all" .
+> Pour deployer sur les deux VM il suffit de faire "hosts=all" .
 
 Une fois l'installation terminer place aux resultats !
 
-## resultat
+## Resultats
 
-Aller sur une page web et taper l'url de la machine sur la quelle vous avez deployé
-192.168.99.11 pour la prod
-et
-192.168.99.112 pour la test
+- Aller sur une page web et tapper l'url de la machine sur la quelle vous avez deployé
+
+> 192.168.99.11 pour la prod
+
+ou
+
+> 192.168.99.12 pour la test
