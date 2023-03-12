@@ -35,7 +35,7 @@ vagrant ssh ansible ->
 ssh-keygen -t rsa ->
 ssh-copy-id vagrant@192.168.99.11 ->
 yes / mot de passe : vagrant ->
-ssh-copy-id vagrant@192.168.99.11 ->
+ssh-copy-id vagrant@192.168.99.12 ->
 yes / mot de passe : vagrant 
 
 
