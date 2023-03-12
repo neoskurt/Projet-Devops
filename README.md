@@ -24,13 +24,13 @@ git clone fsdfjhlqkdjsqlkdlkjq.git
 depuis powershell aller dans le dossier grace la commande 
 cd desktop/ fsdfjhlqkdjsqlkdlkjq
 
-puis excuter la commande suivente 
+puis excuter la commande suivante 
 vagrant up --provision
 
 
 une fois l'installation terminé
 
-excuter les commandes suiventes 
+excuter les commandes suivantes 
 vagrant ssh ansible 
 ssh-keygen -t rsa
 ssh-copy-id vagrant@192.168.99.11
