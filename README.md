@@ -31,11 +31,11 @@ vagrant up --provision
 une fois l'installation terminé
 
 excuter les commandes suivantes 
-vagrant ssh ansible 
-ssh-keygen -t rsa
-ssh-copy-id vagrant@192.168.99.11
-yes / mot de passe : vagrant 
-ssh-copy-id vagrant@192.168.99.11
+vagrant ssh ansible ->
+ssh-keygen -t rsa ->
+ssh-copy-id vagrant@192.168.99.11 ->
+yes / mot de passe : vagrant ->
+ssh-copy-id vagrant@192.168.99.11 ->
 yes / mot de passe : vagrant 
 
 
