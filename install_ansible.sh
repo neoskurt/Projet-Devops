@@ -6,7 +6,7 @@ yum install -y python3
 
 yum -y install git
 
-sudo git clone https://github.com/neoskurt/Website.git ./projet/roles/basic-apache-container/templates/Website
+sudo git clone https://github.com/neoskurt/Website.git ./projet/roles/container/templates/Website
 
 mkdir -p projet
 cd projet/

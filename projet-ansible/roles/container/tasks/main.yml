@@ -1,5 +1,5 @@
 ---
-# tasks file for ansible-role-basic-apache-container
+# tasks file for ansible-role-container
 - include_tasks: "setup-centos.yml"
 - include_tasks: "install-docker.yml"
 - name: Copy website file template
