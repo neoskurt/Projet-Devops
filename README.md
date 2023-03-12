@@ -2,7 +2,9 @@
 ## Projet DevOps
 
 Ce que vous allez passer 5 à 10 minutes à installer !
-Nous aurons pris des jours et des nuits à paramètres !
+Nous avons pris des jours et des nuits à le paramètrer !
+
+Voici le Grand Sommaire de ce Grand PROJET !!
 
 - Prérequis 
 - Installation et Commandes 
@@ -17,44 +19,40 @@ Nous aurons pris des jours et des nuits à paramètres !
 - Aller vous faire un café et installez-vous confortablement !
     https://i.imgflip.com/zcjq2.jpg
 
-## Installation et Commande 
-aller dans le bureau et excuter la commande suivant .
-git clone fsdfjhlqkdjsqlkdlkjq.git
+## Installation et Commande
+Ouvrer votre Powershell
+Aller dans le bureau grâce à la commande suivante : cd Desktop/
+Excuter la commande suivante : git clone fsdfjhlqkdjsqlkdlkjq.git
+Toujours depuis powershell, excuter la commande suivante : vagrant up --provision
 
-depuis powershell aller dans le dossier grace la commande 
-cd desktop/ fsdfjhlqkdjsqlkdlkjq
+Cela risque de prendre un peu de temps...
 
-puis excuter la commande suivante 
-vagrant up --provision
+Une fois l'installation terminée :
 
-
-une fois l'installation terminé
-
-excuter les commandes suivantes 
-vagrant ssh ansible ->
+Excuter les commandes suivantes (dans l'ordre bien-sûr) :
+vagrant ssh ansible -> 
 ssh-keygen -t rsa ->
-ssh-copy-id vagrant@192.168.99.11 ->
-yes / mot de passe : vagrant ->
-ssh-copy-id vagrant@192.168.99.12 ->
-yes / mot de passe : vagrant 
+ssh-copy-id vagrant@192.168.99.11 -> tapper
+yes / puis saissisez le mot de passe suivant : vagrant ->
+repeter les 2 étapes precedentes en remplacent les 2 derniers digits de l'IP de 11 par 12 ->
+ssh-copy-id vagrant@192.168.99.12 -> tapper
+yes / puis saissisez le mot de passe suivant : vagrant 
 
 
-une fois ceci terminé rendez-vous dans le dossier projet grace a la commande
+Une fois ces étapes terminées, rendez-vous dans le dossier projet grace a la commande : cd projet/
 
-cd projet/
+et non cd projekt comme les studios de dévelopement...
 
-et non cd projekt comme les studios de dévelopement 
+Derniére ligne droite ... Courage ! 
 
-Derniére ligne droite excuter 
-
-ansible-playbook -e "hosts=prod" deploy-app.yml
+Executer : ansible-playbook -e "hosts=prod" deploy-app.yml
 
 
-le host depend de la machine sur la quelle vous voulez deployer 
-pour la prod "hosts=prod" pour la test "hosts=staging"
-et pour les deux "hosts=all"
+le "host" depend de la machine sur la quelle vous voulez deployer.
+Pour la prod tappez : "hosts=prod" et pour la test "hosts=staging"
+Pour deployer sur les deux VM il suffit de faire "hosts=all" .
 
-Une fois l'installation terminer place au resultats
+Une fois l'installation terminer place aux resultats !
 
 ## resultat
 
