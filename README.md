@@ -49,23 +49,11 @@ Cela risque de prendre un peu de temps... ⏲️
 
 Une fois l'installation terminée 🔚 :
 
-- Excuter les commandes suivantes (dans l'ordre bien-sûr) : ⬇️
+- Excuter les commandes suivantes (dans l'ordre bien-sûr) ah ! mais il y en a qu'une ... : ⬇️
 
-> vagrant ssh ansible
+> ./ssh.sh
 
-> ssh-keygen -t rsa
-
-> ssh-copy-id vagrant@192.168.99.11
-
-> Tapper : yes / puis saissisez le mot de passe suivant : vagrant
-
-> Repeter les 2 étapes precedentes en remplacent les 2 derniers digits de l'IP de 11 par 12
-
-> ssh-copy-id vagrant@192.168.99.12
-
-> Tapper : yes / puis saissisez le mot de passe suivant : vagrant 
-
-- Une fois ces étapes terminées, rendez-vous dans le dossier projet grace à la commande : cd projet/
+- Une fois cette étape terminée, rendez-vous dans le dossier projet grace à la commande : cd projet/
 
 et non cd projekt comme les studios de dévelopement... 🤡
 
