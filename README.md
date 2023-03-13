@@ -1,4 +1,4 @@
-# Valentin et Anis, 2 freres, 2 Fauves 👬
+# Valentin et Anis, 2 freres 👬, 2 Fauves 🦁 !
 ## Projet DevOps
 
 Ce que vous allez passer 5 à 10 minutes à installer !
@@ -79,3 +79,5 @@ Une fois l'installation terminer place aux resultats !
 ou
 
 > 192.168.99.12 pour la test
+
+- Pour verifier que les conteneurs fonctionnent, tappe la commande suivante : ansible client1 -m shell -a "sudo docker ps -a " .
